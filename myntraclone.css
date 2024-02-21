@@ -5,6 +5,7 @@
     Helvetica, Arial, sans-serif;
   box-sizing: border-box;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -17,23 +18,28 @@ header {
   width: 100%;
   z-index: 200;
 }
+
 .myntra-home {
   height: 45px;
 }
+
 .logo-container {
   margin-left: 4%;
 }
+
 .action-bar {
   margin-right: 4%;
   display: flex;
   min-width: 200px;
   justify-content: space-between;
 }
+
 .nav-bar {
   display: flex;
   min-width: 500px;
   justify-content: space-evenly;
 }
+
 .nav-bar a {
   font-size: 14px;
   letter-spacing: 0.3px;
@@ -44,13 +50,16 @@ header {
   padding: 28px 0;
   border-bottom: 2px solid #ffffff;
 }
+
 .nav-bar a:hover {
   border-bottom: 2px solid #f54377;
 }
+
 .nav-bar a sup {
   color: #ff3f6c;
   font-size: 10px;
 }
+
 .search-bar {
   height: 40px;
   min-width: 200px;
@@ -58,6 +67,7 @@ header {
   display: flex;
   align-items: center;
 }
+
 .search {
   background: #f5f5f6;
   color: #696e79;
@@ -66,6 +76,7 @@ header {
   border: 0;
   border-radius: 0 4px 4px 0;
 }
+
 .search-icon {
   height: 20px;
   padding: 10px;
@@ -75,19 +86,23 @@ header {
   font-weight: 300;
   border-radius: 4px 0 0 4px;
 }
+
 .action-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 /* main section */
 .banner-container {
   margin: 40px 0;
   padding: 80px 0 15px;
 }
+
 .banner-image {
   width: 100%;
 }
+
 .category-heading {
   text-transform: uppercase;
   color: #3e4152;
@@ -97,37 +112,44 @@ header {
   max-height: 5em;
   font-weight: 700;
 }
+
 .category-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
 .sale-items {
-    width: 250px;
+  width: 250px;
 }
+
 /* footer */
 .footer-container {
-    padding: 30px 0 40px 0;
-    background: #fafbfc;
-    display: flex;
-    justify-content: space-evenly;
+  padding: 30px 0 40px 0;
+  background: #fafbfc;
+  display: flex;
+  justify-content: space-evenly;
 }
+
 .footer-column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
 }
+
 .footer-column h3 {
   color: #282c3f;
   font-size: 14px;
   margin-bottom: 25px;
 }
+
 .footer-column a {
   color: #696b79;
   font-size: 15px;
   text-decoration: none;
   padding-bottom: 5px;
 }
+
 .copyright {
   color: #94969f;
   text-align: end;
@@ -146,6 +168,10 @@ header {
   .logo-container {
     display: none;
   }
+
+  .action-bar {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -156,17 +182,29 @@ header {
   #logu {
     display: none;
   }
+
+  #mob-action-bar {
+    display: none;
+  }
 }
 
 .logo-phone {
-  padding-left: 2px;
+  padding-left: 20px;
   text-decoration: none;
 }
 
 #logu {
   font-size: 16px;
   font-weight: 700;
-  position: absolute;
-  top: 26px;
-  left: 36px;
+  position: relative;
+  top: 0px;
+  right: 86px;
+}
+
+#logu img {
+  height: 29px;
+}
+
+#mob-action-bar span {
+  padding: 6px;
 }
